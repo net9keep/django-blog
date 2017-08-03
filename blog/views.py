@@ -34,7 +34,7 @@ def send_mail():
 
     msg['to'] = recipientAddr
 
-    s = smtplib.SMTP_SSL('smtp.naver.com.com', 465)
+    s = smtplib.SMTP_SSL('smtp.naver.com', 465)
 
     s.login(senderAddr, "qs13e2rd13w2a")
 
