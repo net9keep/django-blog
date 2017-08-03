@@ -78,5 +78,6 @@ def post_detail(request, pk):
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    send_mail("net9keep@naver.com", "tae0code@gmail.com", "test", "test")
     return render(request,'blog/post_list.html',{'posts' : posts})
 
