@@ -2,13 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
 import smtplib
-from email.MIMEMultipart import MIMEMultipart
-from email.MIMEBase import MIMEBase
-from email.MIMEText import MIMEText
-from email import Encoders
-from email import Utils
-from email.header import Header
-import os
+from email.mime.text import MIMEText
 
 
 from .models import Post
