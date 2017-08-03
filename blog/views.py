@@ -36,7 +36,7 @@ def send_mail():
 
     s = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 
-    s.login(senderAddr, "1325213a")
+    s.login(str(senderAddr), "1325213a")
 
     s.sendmail(senderAddr, recipientAddr, msg.as_string())
 
